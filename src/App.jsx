@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
   const videoID = "m9e1tK0RL48";
-  const arr = Array(50).fill(`https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1&loop=1&playlist=${videoID}`);
+  const arr = Array(50).fill(`https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1&loop=1&playlist=${videoID}&vq=small`);
 
   return (
     <div className="video-grid">
