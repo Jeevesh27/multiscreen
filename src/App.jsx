@@ -3,8 +3,9 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
-  const arr = Array(50).fill("https://www.youtube.com/embed/m9e1tK0RL48?autoplay=1&mute=1"); 
-  
+  const videoID = "m9e1tK0RL48";
+  const arr = Array(50).fill(`https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1&loop=1&playlist=${videoID}`);
+
   return (
     <div className="video-grid">
       {arr.map((link, index) => (
